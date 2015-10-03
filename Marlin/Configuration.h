@@ -479,11 +479,11 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {(200*16)/(2.0*20), (200*16)/(2.0*20), (200*16)/1, 780}  // changed: steps per unit Prusa i2 723 - (780)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {(200*16)/(2.0*20), (200*16)/(2.0*20), (200*16)/1, 800}  // changed: steps per unit Prusa i2 723 - (780)
 #define DEFAULT_MAX_FEEDRATE          {200, 200, 1.5, 25}    // (mm/sec)  // changed: lowered Z axis speed
-#define DEFAULT_MAX_ACCELERATION      {4500,4500,50,5000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_ACCELERATION      {1500,2000,50,2000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_ACCELERATION          1500  //   // X, Y, Z and E max acceleration in mm/s^2 for printing moves
+#define DEFAULT_ACCELERATION          1000  //   // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1500   // X, Y, Z and E max acceleration in mm/s^2 for retracts
 
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
@@ -522,7 +522,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 //#define EEPROM_CHITCHAT
 
 // Preheat Constants
-#define PLA_PREHEAT_HOTEND_TEMP 210
+#define PLA_PREHEAT_HOTEND_TEMP 220
 #define PLA_PREHEAT_HPB_TEMP 55
 #define PLA_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
