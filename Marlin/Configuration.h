@@ -479,7 +479,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {(200*16)/(2.0*20), (200*16)/(2.0*20), (200*16)/1, 800}  // changed: steps per unit Prusa i2 723 - (780)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {(200*16)/(2.0*20), (200*16)/(2.0*20), (200*16)/1, 750}  // changed: steps per unit Prusa i2 723 - (780)
 #define DEFAULT_MAX_FEEDRATE          {200, 200, 1.5, 25}    // (mm/sec)  // changed: lowered Z axis speed
 #define DEFAULT_MAX_ACCELERATION      {1500,2000,50,2000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
